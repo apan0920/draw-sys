@@ -1,0 +1,35 @@
+/*
+* @Author: pz
+* @Date:   2018-04-13 16:13:49
+* @Last Modified by:   pz
+* @Last Modified time: 2018-04-13 18:29:33
+*/
+*{ margin:0; padding:0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+html,body{ width:100%; height:100%; }
+body{font-size:12px; background:#fff; font-family: "Microsoft YaHei"; min-height: 100%; }
+body{background: url(../images/sys-bg.jpg);background-size: 100% 100%;overflow:hidden; }
+/* h3,p,label,input,input[type="text"], input[type="password"], { margin:0; }
+ul,li { list-style: none; }
+a,a:active,a:link { color:#333; display: block; text-decoration: none; } */
+.margin-center{position: absolute;top: 0;right: 0;bottom: 0;left: 0;margin: auto;}
+
+.header{position: absolute;width: 100%;height: 12%;}
+.logo{position: absolute; height: 100%;}
+.logo_nos{left: 0.3rem;width: 1.02rem;}
+.vertical_line {left: 1.52rem; width: 1px; height: 0.40rem; background-color: rgb(149, 149, 149); }
+.logo_skill{left: 1.72rem; width: 0.76rem; }
+.sys-name{width: 9.55rem; }
+.count-record{right: 1rem; left: auto; height: 40px; line-height: 25px; font-size: 0.18rem;}
+
+.chouqian-title{width: 7.7rem;bottom: auto; top: 20%;}
+.chouqian-box{width: 6.62rem; top: auto; bottom: 23%;}
+.chouqian-box-init-paper{width: 6.06rem; top: auto; bottom: 23%;}
+
+.bottom_btns{ width: 100%;position: absolute;bottom:11%;}
+.footer{position: absolute; bottom: 1px; left: 50%;transform: translate(-50%);color:#333;}
+
+
+.btn{position: absolute; left: 5px; top: 6px; width: 270px; height: 120px;border-radius: 10px;} 
+.btn-start {background-color: rgb(49, 218, 61); box-shadow: 0px 6px 10px 0px rgba(35, 132, 42, 0.004),inset 0px 3px 2px 0px rgba(166, 252, 172, 0.83),inset 0px -1px 3px 0px rgba(24, 137, 32, 0.83),inset 0px -3px 1px 0px rgba(39, 191, 50, 0.83); }
+.btn-go-on {background-color: rgb(69, 151, 243); box-shadow: 0px 6px 10px 0px rgba(30, 98, 175, 0.004),inset 0px 3px 2px 0px rgba(148, 196, 250, 0.83),inset 0px -1px 3px 0px rgba(29, 100, 179, 0.83),inset 0px -3px 1px 0px rgba(82, 151, 229, 0.83); }
+.btn-stop {background-color: rgb(237, 80, 80); box-shadow: 0px 6px 10px 0px rgba(194, 25, 25, 0.004),inset 0px 3px 2px 0px rgba(252, 147, 147, 0.83),inset 0px -1px 3px 0px rgba(196, 13, 13, 0.83),inset 0px -3px 1px 0px rgba(245, 134, 134, 0.83); }
