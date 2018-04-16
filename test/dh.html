@@ -17,7 +17,7 @@
 				position:fixed;
 			}
 		</style>
-		<script src="./js/jquery.min.js" type="text/javascript"></script>
+		<script src="../js/jquery.min.js" type="text/javascript"></script>
 		<script type="text/javascript">
 			$(function(){
 				init();// 页面加载时开始在div上随机“画”图片
@@ -30,7 +30,7 @@
 					// 通过getNum函数获取图片xy轴的坐标。
 					var x=getNum(500),y=getNum(330);
 					// 追加到div容器中。
-					$("<img/>",{"id":"img"+i,"src":"image/spitball.png"}).appendTo("#content").click(function(){
+					$("<img/>",{"id":"img"+i,"src":"../images/spitball.png"}).appendTo("#content").click(function(){
 						alert("hello world");
 					}).css({"top":y,"left":x,"position":"absolute"});
 				}

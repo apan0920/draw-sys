@@ -15,19 +15,132 @@
 			</div>
 			<img src="../images/sys-name.png" class="margin-center sys-name">
 			<div class="margin-center  count-record">
-				<div>已抽签队伍总数: 21</div>
-				<div>未抽签队伍总数: 21</div>
+				<div>已抽签队伍总数: <span>21</span></div>
+				<div>未抽签队伍总数: <span>21</span></div>
+			</div>
+		</div>
+		<!-- 左侧参赛队伍名称 -->
+		<div class="team-menu">
+			<table class="team-list">
+				<thead>
+					<tr>
+						<th>参赛队伍名称</th>
+					</tr>
+				</thead>
+				<tbody class="my-scroll">
+					<tr>
+						<td class="draw-ready">辽宁省普通高等专科学校</td>
+					</tr>
+					<tr>
+						<td>辽宁省普通高等专科学校</td>
+					</tr>
+					<tr>
+						<td>辽宁省普通高等专科学校</td>
+					</tr>
+					<tr>
+						<td>辽宁省普通高等专科学校</td>
+					</tr>
+					<tr>
+						<td>辽宁省普通高等专科学校</td>
+					</tr>
+					<tr>
+						<td>辽宁省普通高等专科学校</td>
+					</tr>
+					<tr>
+						<td>辽宁省普通高等专科学校</td>
+					</tr>
+					<tr>
+						<td>辽宁省普通高等专科学校</td>
+					</tr>
+					<tr>
+						<td>辽宁省普通高等专科学校</td>
+					</tr>
+					<tr>
+						<td>辽宁省普通高等专科学校</td>
+					</tr>
+					<tr>
+						<td>辽宁省普通高等专科学校</td>
+					</tr>
+					<tr>
+						<td>辽宁省普通高等专科学校</td>
+					</tr>
+					<tr>
+						<td>辽宁省普通高等专科学校</td>
+					</tr>
+					<tr>
+						<td>辽宁省普通高等专科学校</td>
+					</tr>
+					<tr>
+						<td>辽宁省普通高等专科学校</td>
+					</tr>
+					<tr>
+						<td>辽宁省普通高等专科学校</td>
+					</tr>
+					<tr>
+						<td>辽宁省普通高等专科学校</td>
+					</tr>
+					<tr>
+						<td>辽宁省普通高等专科学校</td>
+					</tr>
+					<tr>
+						<td>辽宁省普通高等专科学校</td>
+					</tr>
+					<tr>
+						<td>辽宁省普通高等专科学校</td>
+					</tr>
+					<tr>
+						<td>辽宁省普通高等专科学校</td>
+					</tr>
+					<tr>
+						<td>辽宁省普通高等专科学校</td>
+					</tr>
+					<tr>
+						<td>辽宁省普通高等专科学校</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="table-state">
+				<img src="../images/open-table.png" class="margin-center table-btn" alt="打开菜单按钮">
 			</div>
 		</div>
 		<img class="margin-center chouqian-title" src="../images/chouqian-title.png" alt="智慧物流作业方案设计与实施信息化抽签">
-		<img class="margin-center chouqian-box" src="../images/chouqian-box.png" alt="抽签盒子">
-		<img class="margin-center chouqian-box-init-paper" src="../images/chouqian-box-init-paper.png" alt="抽签初始化盒子里的纸团">
-		
-		<!-- <div class="btn btn-start"></div> -->
-		<div class="bottom_btns">
-			<!-- 返回主界面按钮 -->
-			<div id="signOut" class="back_btn"></div>
+		<img class="import-data cursor" src="../images/import-data.png" alt="导入数据">
+
+		<!-- 抽签盒子 -->
+		<div  class="margin-center chouqian-box">
+			<div id="content" class="margin-center content">
+				<img class="chouqian-box-init-paper" src="../images/chouqian-box-init-paper.png" alt="抽签初始化盒子里的纸团">
+			</div>
+			
+			<p class="margin-center chouqian-box-school-name">辽宁省交通高等专科学校</p>
 		</div>
+
+		<!-- 控制按钮 -->
+		<div class="margin-center btn btn-start cursor">开始</div>
+	
+		<!-- 抽签结果 -->
+		<div class="result-no-bg margin-center">01</div>
+
+		<!-- 导入数据界面 -->
+		<div class="import-data-mask">
+			<div class="import-data-box margin-center">
+				<img class="import-close" src="../images/close.png" alt="关闭按钮">
+				<div class="import-input">
+					<input type="file">
+					<span class="import-templet-down">下载参赛队伍导入模板</span>
+				</div>
+				<div class="import-intro">
+					<h3 class="import-intro-title">模板要求：</h3>
+					<br /> 一：请严格按照模板的格式制作需要导入的文档；<br />
+					二：请新建Excel文件然后插入数据，而不要随便新建一个文件然后改名为Excel格式的文件；<br />
+					三：在删除行数据是应该整行删除，而不要单个单元格的删除；<br />
+					四：所有数据的类型都应该是文本类型；<br />
+					五：如果提示第N行数据为空时，如果这行没有数据，请删除整行记录。<br />
+				</div>
+				<img class="import-btn" src="../images/import-btn.png" alt="保存导入">
+			</div>
+		</div>
+
 		<div id="footer" > 
 			<div class="footer" > &copy;&nbsp;深圳市中诺思科技股份有限公司 版权所有</div>
 		</div>
@@ -37,5 +150,11 @@
 	<script src="../js/jquery.min.js"></script>
 	<script src="../js/rem.js"></script>
 	<script src="../js/base.js"></script>
+	<script src="../js/index.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		//alert($('.my-scroll').height())
+	})
+	</script>
 </body>
 </html>
