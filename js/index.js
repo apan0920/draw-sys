@@ -2,11 +2,10 @@
 * @Author: pz
 * @Date:   2018-04-16 15:10:06
 * @Last Modified by:   pz
-* @Last Modified time: 2018-04-16 18:55:35
+* @Last Modified time: 2018-04-17 09:23:41
 */
 
 // 左侧参赛队伍名称菜单
-// var teamMenuLeft = $('.team-menu').position().left;
 $('.team-menu').hover(function () {
 	$('.team-menu').animate({left:'0rem'});
 	var imgHtml = '<img src="../images/close-table.png" class="margin-center table-btn" alt="关闭菜单按钮">';
@@ -28,27 +27,24 @@ $('.import-close').click(function () {
 
 $('.btn').click(function () {
 	// init();
-	// drawInterval = null;
-	if ($(this).hasClass("btn-start")) {
-		$(".result-no-bg").hide();
+	if ($(this).hasClass("btn-start") || $(this).hasClass("btn-go-on")) {
+		$(".result-no-bg").hide();// 隐藏抽签结果
 		drawInterval = setInterval(function () {
 			init();
 		},150);
 		$(this).html("停止");
-		$(this).removeClass("btn-start").addClass("btn-stop");
+		if ($(this).hasClass("btn-start") ) {
+			$(this).removeClass("btn-start");
+		} else {
+			$(this).removeClass("btn-go-on");
+		}
+		$(this).addClass("btn-stop");
 	}else if ($(this).hasClass("btn-stop")) {
 		clearInterval(drawInterval);
 		$(this).html("继续");
 		$(this).removeClass("btn-stop").addClass("btn-go-on");
-		// 显示抽签结果
-		$(".result-no-bg").show();
-	}else if ($(this).hasClass("btn-go-on")) {
-		$(".result-no-bg").hide();
-		drawInterval = setInterval(function () {
-			init();
-		},150);
-		$(this).html("停止");
-		$(this).removeClass("btn-go-on").addClass("btn-stop");
+		
+		$(".result-no-bg").show();// 显示抽签结果
 	}
 });
 
@@ -61,7 +57,7 @@ function init(){
 		var x=getNum(450)/100,y=getNum(200)/100;
 		// 追加到div容器中。
 		$("<img/>",{"id":"img"+i,"src":"../images/spitball.png"}).appendTo("#content").click(function(){
-			alert("hello world");
+			// alert("hello world");
 		}).css({"top":y+"rem","left":x+"rem","position":"absolute","width":"0.5rem"});
 	}
 };

@@ -2,7 +2,7 @@
 * @Author: pz
 * @Date:   2018-04-13 16:13:49
 * @Last Modified by:   pz
-* @Last Modified time: 2018-04-16 18:46:29
+* @Last Modified time: 2018-04-17 09:23:48
 */
 *{ margin:0; padding:0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 html,body{ width:100%; height:100%;}
@@ -10,8 +10,8 @@ body{font-size:12px; background:#fff; font-family: "Microsoft YaHei,SimHei,SimSu
 body{background: url(../images/sys-bg.jpg) no-repeat;background-size: 100% 100%;overflow:hidden; font-size:100%;min-width: 800px;min-height: 600px; }
 img{width:auto;height:auto}
 /* h3,p,label,input,input[type="text"], input[type="password"], { margin:0; }
-ul,li { list-style: none; }
-a,a:active,a:link { color:#333; display: block; text-decoration: none; } */
+ul,li { list-style: none; }*/
+a,a:active,a:link {text-decoration: none; } 
 .margin-center{position: absolute;top: 0;right: 0;bottom: 0;left: 0;margin: auto;}
 
 .header{position: absolute;width: 100%;height: 12%;}
@@ -28,7 +28,7 @@ a,a:active,a:link { color:#333; display: block; text-decoration: none; } */
 .team-list > thead { position: absolute; width: 100%; top:0; left: 0; height: .54rem; }
 .team-list > thead > tr > th{background-color:#e5effd; font-size: 0.24rem; width: 3.98rem; height: 0.54rem;table-layout:fixed;}
 .team-list > tbody {display:block; height:100%; overflow-y:scroll; }
-.team-list >  tbody > tr > td{ /*display:block;*/ width: 3.98rem; height: 0.54rem;text-align: center;}
+.team-list >  tbody > tr > td{ width: 3.98rem; height: 0.54rem;text-align: center;}
 .team-list > tbody > tr:nth-child(odd){background-color: rgba(216, 232, 255, 0.502); font-size: 0.18rem }
 .team-list > tbody > tr:nth-child(even){background-color: rgba(253, 247, 229, 0.2); font-size: 0.18rem}
 /*未抽签样式,抽签完成去掉该样式*/
@@ -47,20 +47,20 @@ a,a:active,a:link { color:#333; display: block; text-decoration: none; } */
 
 .chouqian-title{width: 7.7rem;bottom: auto; top: 20%;}
 .import-data{width: 1.26rem;position: absolute; top: calc(20% - 0.3rem); right: 1rem;cursor: pointer;}
-.chouqian-box{width: 6.62rem;height: 5.08rem; top: auto; bottom: 23%;background: url(../images/chouqian-box.png)no-repeat;background-size: 100% 100%;}
+.chouqian-box{width: 6.62rem;height: 5.08rem; top: auto; bottom: 23%;}
 .content{position: absolute;width: 5rem;height: 2.5rem;top: auto;bottom: 10px;}
 .chouqian-box-init-paper{position: absolute;width: 90%; bottom: 0;left: 0; right: 0;margin:0 auto;}
 .chouqian-box-school-name{width: auto; font-size: 0.38rem; color: #FFF; font-weight: bold; line-height: 1.2rem; top: auto; bottom: 41%; text-align: center; }
-
+.chouqian-box-img{position: absolute;width: 100%;height: 100%;}
 /*抽签结果*/
 .result-no-bg{display: none;top:0.3rem; width: 7.96rem;height: 4.95rem;line-height: 4.95rem;text-align: center;background: url(../images/result-no-bg.png)no-repeat;background-size: 100% 100%;color: #ed5050;font-size: 3rem;}
 /*<!-- 导入数据界面 -->*/
 .import-data-mask{display: none;position: absolute; width: 100%; height: 100%; background: rgba(157, 165, 189, 0.5); }
-.import-data-box{top:0.3rem; width: 7.96rem;min-width:544px;height: 4.95rem;min-height:338px;background: #FFF;font-size: 0.14rem;border: 1px solid #759ef0; border-radius: 5px;}
+.import-data-box{top:0.3rem; width: 7.96rem;min-width:544px;height: 4.95rem;min-height:338px;background: #FFF;font-size: 0.18rem;border: 1px solid #759ef0; border-radius: 5px;}
 .import-close{position: absolute;right: 3px;top: 3px;cursor:pointer;}
 .import-input{position: absolute; top: 15%; left: 5%; }
 .import-templet-down{color:#ed5050;}
-.import-intro{position: absolute; top: 30%; left: 5%;line-height: 200%;}
+.import-intro{position: absolute; top: 25%; left: 5%;line-height: 200%;}
 .import-intro-title{font-size: 0.20rem;}
 .import-btn{width: 1.16rem;position: absolute;left: 0;right: 0;margin:0 auto; bottom: 0;cursor:pointer;}
 
@@ -71,7 +71,7 @@ a,a:active,a:link { color:#333; display: block; text-decoration: none; } */
 
 .btn{top: auto; bottom:6%; width: 2.7rem; height: 1.2rem;border-radius: 10px; font-size: 0.72rem; color: #FFF; font-weight: bold; line-height: 1.2rem; text-align: center; letter-spacing: 0.2rem; text-indent: 0.2rem; cursor: pointer;}
 .btn-start {background-color: rgb(49, 218, 61); box-shadow: 0px 6px 10px 0px rgba(35, 132, 42, 0.004),inset 0px 3px 2px 0px rgba(166, 252, 172, 0.83),inset 0px -1px 3px 0px rgba(24, 137, 32, 0.83),inset 0px -3px 1px 0px rgba(39, 191, 50, 0.83); }
-.btn-go-on {background-color: rgb(69, 151, 243); box-shadow: 0px 6px 10px 0px rgba(30, 98, 175, 0.004),inset 0px 3px 2px 0px rgba(148, 196, 250, 0.83),inset 0px -1px 3px 0px rgba(29, 100, 179, 0.83),inset 0px -3px 1px 0px rgba(82, 151, 229, 0.83); }
+.btn-go-on  {background-color: rgb(69, 151, 243); box-shadow: 0px 6px 10px 0px rgba(30, 98, 175, 0.004),inset 0px 3px 2px 0px rgba(148, 196, 250, 0.83),inset 0px -1px 3px 0px rgba(29, 100, 179, 0.83),inset 0px -3px 1px 0px rgba(82, 151, 229, 0.83); }
 .btn-stop {background-color: rgb(237, 80, 80); box-shadow: 0px 6px 10px 0px rgba(194, 25, 25, 0.004),inset 0px 3px 2px 0px rgba(252, 147, 147, 0.83),inset 0px -1px 3px 0px rgba(196, 13, 13, 0.83),inset 0px -3px 1px 0px rgba(245, 134, 134, 0.83); }
 
 @media (max-height: 900px) {
