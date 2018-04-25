@@ -2,11 +2,11 @@
 * @Author: pz
 * @Date:   2018-04-13 16:13:49
 * @Last Modified by:   pz
-* @Last Modified time: 2018-04-17 09:23:48
+* @Last Modified time: 2018-04-20 14:42:27
 */
 *{ margin:0; padding:0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 html,body{ width:100%; height:100%;}
-body{font-size:12px; background:#fff; font-family: "Microsoft YaHei,SimHei,SimSun"; min-height: 100%; margin:0;}
+body{font-size:12px; background:#fff;font-family: "Microsoft YaHei";/*font-family: "Microsoft YaHei,SimHei,SimSun";*/ min-height: 100%; margin:0;}
 body{background: url(../images/sys-bg.jpg) no-repeat;background-size: 100% 100%;overflow:hidden; font-size:100%;min-width: 800px;min-height: 600px; }
 img{width:auto;height:auto}
 /* h3,p,label,input,input[type="text"], input[type="password"], { margin:0; }
@@ -16,23 +16,26 @@ a,a:active,a:link {text-decoration: none; }
 
 .header{position: absolute;width: 100%;height: 12%;}
 .logo{position: absolute; height: 100%;}
-.logo_nos{left: 0.3rem;width: 1.02rem;}
-.vertical_line {left: 1.52rem; width: 1px; height: 0.40rem; background-color: rgb(149, 149, 149); }
-.logo_skill{left: 1.72rem; width: 0.76rem; }
-.sys-name{width: 9.55rem; }
-.count-record{right: 1rem; left: auto; height: 40px; line-height: 25px; font-size: 0.18rem;}
-
+.logo_nos{left: 1.52rem;width: 1.53rem;}
+.vertical_line {left: 1.32rem; width: 1px; height: 0.40rem; background-color: rgb(149, 149, 149); }
+.logo_skill{left: 0.3rem; width: 0.76rem; }
+.sys-name{top: 0.1rem;width: 12.55rem;white-space: nowrap;font-size: 0.66rem; font-weight: bold;color: #21387c; text-align: center;letter-spacing: 0.2rem;}
+.count-record{right: 1rem; left: auto; height: 40px; line-height: 25px; font-size: 0.36rem;color: #FFF;}
+.count-record-num{text-decoration: underline; line-height: 0.5rem;}
 /*参赛队伍名称列表*/
 .team-menu{width: 25%; height: 80%; position: absolute; bottom: 0;left:-4rem; }
 .team-list{ width: 4rem; display: block; padding-top:.54rem; position: absolute;height: 100%;background-color: #b2bad1;}
 .team-list > thead { position: absolute; width: 100%; top:0; left: 0; height: .54rem; }
 .team-list > thead > tr > th{background-color:#e5effd; font-size: 0.24rem; width: 3.98rem; height: 0.54rem;table-layout:fixed;}
+.team-list > thead > tr > th:first-child{width: 79.6%}
 .team-list > tbody {display:block; height:100%; overflow-y:scroll; }
-.team-list >  tbody > tr > td{ width: 3.98rem; height: 0.54rem;text-align: center;}
+.team-list > tbody > tr > td:first-child{width: 80%}
+.team-list > tbody > tr > td{ width: 3.98rem; height: 0.54rem;text-align: center;color: #1280fc;}
+.team-list > tbody > tr > .draw-ready { width: 3.98rem; height: 0.54rem;text-align: center;color: #6b6b6b;}
 .team-list > tbody > tr:nth-child(odd){background-color: rgba(216, 232, 255, 0.502); font-size: 0.18rem }
 .team-list > tbody > tr:nth-child(even){background-color: rgba(253, 247, 229, 0.2); font-size: 0.18rem}
 /*未抽签样式,抽签完成去掉该样式*/
-.draw-ready{color:#6b6b6b;}
+/*.draw-ready{color:#6b6b6b;}*/
 /*自定义滚动条--start*/
 .my-scroll::-webkit-scrollbar {width:0.03rem;}
 .my-scroll::-webkit-scrollbar-button{background-color: #b3bbd3; height: 4px; }
@@ -45,39 +48,74 @@ a,a:active,a:link {text-decoration: none; }
 
 .table-btn{width: 0.22rem;}
 
-.chouqian-title{width: 7.7rem;bottom: auto; top: 20%;}
-.import-data{width: 1.26rem;position: absolute; top: calc(20% - 0.3rem); right: 1rem;cursor: pointer;}
-.chouqian-box{width: 6.62rem;height: 5.08rem; top: auto; bottom: 23%;}
-.content{position: absolute;width: 5rem;height: 2.5rem;top: auto;bottom: 10px;}
+.chouqian-title{width: 7.7rem;bottom: auto; top: 20%;color:#d0dcff;font-weight:bold; font-size:0.32rem;letter-spacing: 0.1rem;text-align: center;}
+.import-export-data{width: 1.26rem;position: absolute; top: calc(20% - 0.3rem); cursor: pointer;}
+.import-data{right: 2.5rem;}
+.export-data{right: 1rem;}
+.chouqian-box{width: 8.61rem;height: 5.99rem; top: auto; bottom: 18%;}
+.content{position: absolute;width: 6rem;height: 3rem;top: auto;bottom: 10px;}
+.box-under-shadow{position: absolute;width: 100%; bottom: -0.4rem;left: 0; right: 0;margin:0 auto;}
 .chouqian-box-init-paper{position: absolute;width: 90%; bottom: 0;left: 0; right: 0;margin:0 auto;}
-.chouqian-box-school-name{width: auto; font-size: 0.38rem; color: #FFF; font-weight: bold; line-height: 1.2rem; top: auto; bottom: 41%; text-align: center; }
+.chouqian-box-school-name{width: auto; font-size: 0.55rem; color: #FFF; font-weight: bold; line-height: 1.2rem; top: auto; bottom: 34%; text-align: center; white-space: nowrap;background-color: rgba(0,240,255,0.5);}
+.font-size-04{font-size: 0.4rem}
+.font-size-035{font-size: 0.35rem}
+.font-size-03{font-size: 0.3rem}
+.font-size-025{font-size: 0.25rem}
+.font-size-02{font-size: 0.2rem}
+.font-size-012{font-size: 0.12rem}
 .chouqian-box-img{position: absolute;width: 100%;height: 100%;}
 /*抽签结果*/
-.result-no-bg{display: none;top:0.3rem; width: 7.96rem;height: 4.95rem;line-height: 4.95rem;text-align: center;background: url(../images/result-no-bg.png)no-repeat;background-size: 100% 100%;color: #ed5050;font-size: 3rem;}
+.result-no-bg{display: none;top:1rem;width: 7.96rem;height: 4.95rem;text-align: center;background: url(../images/result-no-bg.png)no-repeat;background-size: 100% 100%;color: #ed5050;font-size: 3rem;}
+.school-name{position: absolute;top: 0.5rem;bottom: auto;left:0;right: 0;margin:0 auto; font-size: 0.3rem;font-weight: bold;color:#000; }
+.result-no{padding-top:0.8rem}
 /*<!-- 导入数据界面 -->*/
-.import-data-mask{display: none;position: absolute; width: 100%; height: 100%; background: rgba(157, 165, 189, 0.5); }
+.mask-div{display: block;position: absolute; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); }
+.import-data-mask{display: none;}
 .import-data-box{top:0.3rem; width: 7.96rem;min-width:544px;height: 4.95rem;min-height:338px;background: #FFF;font-size: 0.18rem;border: 1px solid #759ef0; border-radius: 5px;}
-.import-close{position: absolute;right: 3px;top: 3px;cursor:pointer;}
-.import-input{position: absolute; top: 15%; left: 5%; }
+.import-close{position: absolute;right: 3px;top: 3px;cursor:pointer;width: 0.32rem;}
+.import-input{position: absolute; top: 10%; left: 5%; }
+/*自定义[type=file]样式*/
+.file {position: relative; display: inline-block; background: #D0EEFF; border: 1px solid #99D3F5; border-radius: 4px; padding: 1px 12px; overflow: hidden; color: #1E88C7; text-decoration: none; text-indent: 0; line-height: 20px; }
+.file input {position: absolute; font-size: 100px; right: 0; top: 0; opacity: 0; }
+.file:hover {background: #AADFFD; border-color: #78C3F3; color: #004974; text-decoration: none; }
+.file-intro-text{position: absolute;line-height: 24px;width: 250px; }
+.file-error-tip{display: none;position: absolute;line-height: 24px;width: 250px;color: red; }
 .import-templet-down{color:#ed5050;}
-.import-intro{position: absolute; top: 25%; left: 5%;line-height: 200%;}
-.import-intro-title{font-size: 0.20rem;}
+.import-intro{position: absolute; top: 30%; left: 5%;line-height: 200%;}
+.import-intro-title{font-size: 0.20rem;padding-bottom: 0.3rem;}
 .import-btn{width: 1.16rem;position: absolute;left: 0;right: 0;margin:0 auto; bottom: 0;cursor:pointer;}
+.a-upload,.show-file-name{margin-top: 0.1rem;}
+/*提示框*/
+.prompt-mask{display: none;}
+.prompt-bg{position: absolute;width: 6.3rem;height:4.16rem ; background: url("../images/prompt-bg.png") no-repeat;background-size: 100% 100%;}
+.prompt-content{ position: absolute; bottom: 57%;left: 44%; font-size: 0.3rem; }
+.prompt-sure{position: absolute;width: 100%;bottom: 0;height: 22%;cursor:pointer;}
 
-
+.btn{top: auto; bottom:4%; width: 2.7rem; height: 1.2rem; border-radius: 10px; font-size: 0.6rem; color: #FFF; font-weight: bold; line-height: 1.2rem; text-align: center; letter-spacing: 0.2rem; text-indent: 0.2rem; cursor: pointer; left: 33%; right: auto; }
+.btn-start {background-color: rgb(49, 218, 61); box-shadow: 0px 6px 10px 0px rgba(35, 132, 42, 0.004),inset 0px 3px 2px 0px rgba(166, 252, 172, 0.83),inset 0px -1px 3px 0px rgba(24, 137, 32, 0.83),inset 0px -3px 1px 0px rgba(39, 191, 50, 0.83); }
+.btn-go-on {left: 54%; right: auto;background-color: rgb(69, 151, 243); box-shadow: 0px 6px 10px 0px rgba(30, 98, 175, 0.004),inset 0px 3px 2px 0px rgba(148, 196, 250, 0.83),inset 0px -1px 3px 0px rgba(29, 100, 179, 0.83),inset 0px -3px 1px 0px rgba(82, 151, 229, 0.83); }
+.btn-stop {background-color: rgb(237, 80, 80); box-shadow: 0px 6px 10px 0px rgba(194, 25, 25, 0.004),inset 0px 3px 2px 0px rgba(252, 147, 147, 0.83),inset 0px -1px 3px 0px rgba(196, 13, 13, 0.83),inset 0px -3px 1px 0px rgba(245, 134, 134, 0.83); }
 
 .footer{position: absolute; bottom: 1px; left: 50%;transform: translate(-50%);color:#333;font-size: 0.14rem;}
 
 
-.btn{top: auto; bottom:6%; width: 2.7rem; height: 1.2rem;border-radius: 10px; font-size: 0.72rem; color: #FFF; font-weight: bold; line-height: 1.2rem; text-align: center; letter-spacing: 0.2rem; text-indent: 0.2rem; cursor: pointer;}
-.btn-start {background-color: rgb(49, 218, 61); box-shadow: 0px 6px 10px 0px rgba(35, 132, 42, 0.004),inset 0px 3px 2px 0px rgba(166, 252, 172, 0.83),inset 0px -1px 3px 0px rgba(24, 137, 32, 0.83),inset 0px -3px 1px 0px rgba(39, 191, 50, 0.83); }
-.btn-go-on  {background-color: rgb(69, 151, 243); box-shadow: 0px 6px 10px 0px rgba(30, 98, 175, 0.004),inset 0px 3px 2px 0px rgba(148, 196, 250, 0.83),inset 0px -1px 3px 0px rgba(29, 100, 179, 0.83),inset 0px -3px 1px 0px rgba(82, 151, 229, 0.83); }
-.btn-stop {background-color: rgb(237, 80, 80); box-shadow: 0px 6px 10px 0px rgba(194, 25, 25, 0.004),inset 0px 3px 2px 0px rgba(252, 147, 147, 0.83),inset 0px -1px 3px 0px rgba(196, 13, 13, 0.83),inset 0px -3px 1px 0px rgba(245, 134, 134, 0.83); }
 
 @media (max-height: 900px) {
-	.chouqian-box {width: 5.62rem; height: 4.08rem;}
+	.chouqian-box {width: 6.62rem; height: 4.6rem;}
+	.btn {height: 1rem; font-size: 0.5rem; line-height: 1rem;width: 2.3rem;left: 35%; }
+	.btn-go-on {left: 54%;}
 }
 
+@media (max-height: 700px) {
+	.result-no-bg{top: 2rem;}
+}
+/*IE11*/
 @media screen and(-ms-high-contrast:active),(-ms-high-contrast:none) {
 	/* .table-state{position: absolute; left: 3.98rem;  } */
+	.team-list > thead > tr > th:first-child{width: 75.8%;}
+	.btn{font-size: 0.45rem;}
+}
+/*firefox*/
+@-moz-document url-prefix() {
+    .team-list > thead > tr > th:first-child{width: 75.8%;}
 }
